@@ -4,7 +4,12 @@ Este Repositório tem dicas de redução de Consumo de Energia em NAS e Home Ser
 # Como você pode apoiar o meu trabalho
 
 [Seja membro no Yotube](https://www.youtube.com/@LeandroPinheiroTI/membership)
+
 [Mande uma Gorjeta no PIX](https://livepix.gg/leandropinheiroti)
+
+[Compre no Aliexpress](https://s.click.aliexpress.com/e/_DC6mCFt)
+
+[Compre na Amazon](https://www.amazon.com.br/?&_encoding=UTF8&tag=canalblackit-20&linkCode=ur2&linkId=e9810db94398d707188c4d341e4a264a&camp=1789&creative=9325)
 
 # Meus vídeos sobre o tema
 
