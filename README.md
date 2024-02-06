@@ -26,7 +26,7 @@ O Servidor normalmente é headless (sem vídeo), se a sua placa mãe suporta boo
 Sempre que possivel remova:
 * Módulos de memória
 * Teclado e mouse
-* monitor
+* Monitor
 * Placa de Vídeo
 
 # Escolha Componentes Corretamente
@@ -215,7 +215,7 @@ Utilizar MERGERFS para exibir vários discos como um **Discão***, e o SnapRAID 
 
 >[!NOTE]
 >
->*Esse GIT é um trabalho em progresso, a medida que for testanto as coisas vou adicionando aqui.
->*Assine esse REPO pra ficar sabendo das atualizações.
->*Se Inscreva no meu canal do Youtube.
->*Se puder contribua financeiramente com o meu trabalho.
+>* Esse GIT é um trabalho em progresso, a medida que for testanto as coisas vou adicionando aqui.
+>* Assine esse REPO pra ficar sabendo das atualizações.
+>* Se Inscreva no meu canal do Youtube.
+>* Se puder contribua financeiramente com o meu trabalho.
