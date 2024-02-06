@@ -115,7 +115,7 @@ Feche e salve o editor.
 
 O Linux tem uma ferramenta de controle do clock da CPU, o **cpufreqd**!
 
-A ideia é alterar o [Governor[(https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt}, que controla como o processador vai utilizar o clock da CPU.
+A ideia é alterar o [Governor](https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt}, que controla como o processador vai utilizar o clock da CPU.
 
 >[!TIP]
 >CPU Frequency Governors disponíveis:
