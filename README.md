@@ -202,6 +202,8 @@ Feche e salve o editor.
 
 Os HDDs são verdadeiros vilões no consumo de energia de um NAS ou servidor.
 
+Sempre que possível configure os seus HDDs para fazer **spindown (parar de rodas)**, utilizar baixo consumo de energia, e baixa emissão de ruidos, isso diminui a performance, mas também diminui o consumo, para redes **Gigabit** nem dá pra notar.
+
 RAID ou ZFS precisam fazer a leitura/gravação em todos os Discos do Array ao mesmo tempo, multiplicando o consumo de energia.
 
 HDD de Notebook em geral consome menos que os de Desktop.
