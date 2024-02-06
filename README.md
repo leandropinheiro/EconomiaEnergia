@@ -3,7 +3,7 @@ Este Repositório tem dicas de redução de Consumo de Energia em NAS e Home Ser
 
 # Como você pode apoiar o meu trabalho
 
-[Seja membro no Yotube](https://www.youtube.com/@LeandroPinheiroTI/membership)
+[Seja membro no Youtube](https://www.youtube.com/@LeandroPinheiroTI/membership)
 
 [Mande uma Gorjeta no PIX](https://livepix.gg/leandropinheiroti)
 
@@ -37,6 +37,13 @@ Prefira usar:
 * HDD 5400 vs 7200 (consome menos)
 * HDD Notebook vs Desktop (consome menos)
 * Placa Mãe ITX geralmente consome menos, por ter menos componentes
+
+>[!TIP]
+>Utilize fonte PICO PSU em conjunto com uma Fonte Meanwell de 12v, Fonte ATX não é eficiente com baixa utilização, aqui tenho uma placa J1900 que consome 28w com uma fonte ATX e 8w com uma fonte PICO PSU, só mudando de fonte.
+>
+>![Fonte PICO PSU](prints/pico-psu.webp)
+>
+>![Fonte Meanwell](prints/meanwell.webp)
 
 # Linux Tem Recursos extras de Conservação de Energia
 
@@ -104,3 +111,106 @@ Adicione a seguinte linha no arquivo:
 
 Feche e salve o editor.
 
+# Controle a Frequencia da sua CPU
+
+O Linux tem uma ferramenta de controle do clock da CPU, o **cpufreqd**!
+
+A ideia é alterar o [Governor[(https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt}, que controla como o processador vai utilizar o clock da CPU.
+
+>[!TIP]
+>CPU Frequency Governors disponíveis:
+>
+>* Performance
+>* Powersave
+>* Userspace
+>* Ondemand
+>* Conservative
+>* Schedutil
+
+Em Processadores Xeon ou Core, ate´faz sentido configurar o Governor como **powersave**, ele vai limitar o Clock da CPU ao valor ***BASE***.
+Em Processadores como o Celeron J1900/J1800, N5105/N5095, N6005, N100, que já consomem muito pouco, eu recomendo configuraar o Governor como **performance**, ele vai tentar utilizar o Clock da CPU no valor ***TURBO***.
+Se você quer deixar o Clock variando com tendencia a economia utilize o Governor **conservative**.
+O Normal é Governor **ondemand**, ele vai entregar o Clock conforme requisitado pelos processos, com tentendia a performance.
+
+## Instalar o cpufreq
+
+```
+apt install cpufreqd cpufrequtils
+```
+
+Se você não está logado como root
+
+```
+sudo apt install cpufreqd cpufrequtils
+```
+
+## Verificar qual o Governor está em uso?
+
+Qual governor está em uso, e quais posso utilizar no meu sistema?
+
+```
+cpufreq-info
+```
+
+![Exemplo do uso do cpufreq-info](prints/cpufreq-info.png)
+
+## Alterar o Governor de forma interativa
+
+Alterar para ***Powersave***:
+
+```
+cpufreq-set -g powersave
+```
+Se você não está logado como root
+```
+sudo cpufreq-set -g powersave
+```
+
+Alterar para ***Performance***:
+
+```
+cpufreq-set -g performance
+```
+Se você não está logado como root
+```
+sudo cpufreq-set -g performance
+```
+
+## Fazendo o cpufreq-set aplicar no boot
+
+Edite o arquivo Cron utilizando o utilitário crontab como **root**.
+
+```
+crontab -e
+```
+
+Se você não está logado como root
+
+```
+sudo crontab -e
+```
+
+Adicione a seguinte linha no arquivo:
+
+```
+@reboot /bin/sleep 60 && /bin/cpufreq-set -g powersave
+```
+
+Feche e salve o editor.
+
+# HARD DISK DRIVE (HDD) é um vilão
+
+Os HDDs são verdadeiros vilões no consumo de energia de um NAS ou servidor.
+
+RAID ou ZFS precisam fazer a leitura/gravação em todos os Discos do Array ao mesmo tempo, multiplicando o consumo de energia.
+
+HDD de Notebook em geral consome menos que os de Desktop.
+
+Utilizar MERGERFS para exibir vários discos como um **Discão***, e o SnapRAID para fazer a **Paridade** dos discos, e utilizar um SSD como **Cache** para evitar ***Ligar*** os HDDs sem necessecidade, ajudam muito a reduzir o consumo de energia.
+
+>[!NOTE]
+>
+>*Esse GIT é um trabalho em progresso, a medida que for testanto as coisas vou adicionando aqui.
+>*Assine esse REPO pra ficar sabendo das atualizações.
+>*Se Inscreva no meu canal do Youtube.
+>*Se puder contribua financeiramente com o meu trabalho.
