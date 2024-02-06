@@ -115,7 +115,7 @@ Feche e salve o editor.
 
 O Linux tem uma ferramenta de controle do clock da CPU, o **cpufreqd**!
 
-A ideia é alterar o [Governor](https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt}, que controla como o processador vai utilizar o clock da CPU.
+A ideia é alterar o [Governor](https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt), que controla como o processador vai utilizar o clock da CPU.
 
 >[!TIP]
 >CPU Frequency Governors disponíveis:
@@ -128,8 +128,11 @@ A ideia é alterar o [Governor](https://www.kernel.org/doc/Documentation/cpu-fre
 >* Schedutil
 
 Em Processadores Xeon ou Core, ate´faz sentido configurar o Governor como **powersave**, ele vai limitar o Clock da CPU ao valor ***BASE***.
-Em Processadores como o Celeron J1900/J1800, N5105/N5095, N6005, N100, que já consomem muito pouco, eu recomendo configuraar o Governor como **performance**, ele vai tentar utilizar o Clock da CPU no valor ***TURBO***.
+
+Em Processadores como o Celeron J1900/J1800, N5105/N5095, N6005, N100, que já consomem muito pouco, eu recomendo configurar o Governor como **performance**, ele vai tentar utilizar o Clock da CPU no valor ***TURBO***.
+
 Se você quer deixar o Clock variando com tendencia a economia utilize o Governor **conservative**.
+
 O Normal é Governor **ondemand**, ele vai entregar o Clock conforme requisitado pelos processos, com tentendia a performance.
 
 ## Instalar o cpufreq
