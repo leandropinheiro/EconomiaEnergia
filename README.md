@@ -61,6 +61,10 @@ Para outras distribuições deve funcionar também, mas você tem que pesquisar 
 >[!TIP]
 >  *** AQUI EU TENHO DUAS CONTROLADORAS DE DISCO, UMA SATA E OUTRA SAS, AMBAS EU TIVE QUE ATUALIZAR O FIRMWARE PARA PARAR DE DAR PROBLEMA COM O POWERTOP, O FIRMWARE QUE VEIO DO FABRICANTE CHINES ERA MUITO ANTIGO E NÃO FUNCIONAVA DIREITO ***
 
+>[!NOTE]
+>
+> É normal o ***SERVER*** reiniciar ao executar o o **POWERTOP** pela primeira vez.
+
 ## Instalar o Powertop
 
 ```
