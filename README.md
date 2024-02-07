@@ -213,6 +213,24 @@ HDD de Notebook em geral consome menos que os de Desktop.
 
 Utilizar MERGERFS para exibir vários discos como um **Discão***, e o SnapRAID para fazer a **Paridade** dos discos, e utilizar um SSD como **Cache** para evitar ***Ligar*** os HDDs sem necessecidade, ajudam muito a reduzir o consumo de energia.
 
+## COMO CONFIGURAR OS DISCOS PARA ECONOMIA NO OPEN MEDIA VAULT
+
+Para cada disco no OMV, configure na aba **STORAGE** de acordo com os prints abaixo:
+
+![COMO CHEGAR NA CONFIGURAÇÃO DOS DISCOS NO OMV](prints/omv-disk-a.png)
+
+![COMO CONFIGURAR O DISCO PARA BAIXO CONSUMO NO OMVS](prints/omv-disk-b.png)
+
+>[!WARNING]
+>
+>**Não habilitem o WRITE CACHE**
+>
+>Essa funcionalidade aumenta a performance de gravação, pouca coisa.
+>
+>Entretanto se teu servidor trava, ou falta energia sempre, e não tem no-break, essa funcionalidade pode levar a perca de dados.
+>
+>Ela funciona enviando uma confirmação de gravação na mídia do Disco, mesmo os dados ainda estando em **CACHE**, como o cache é RAM, ao reiniciar, ou faltar energia, o que estava somente no CACHE e ainda não foi gravado no Disco será perdido.
+
 >[!NOTE]
 >
 >* Esse GIT é um trabalho em progresso, a medida que for testanto as coisas vou adicionando aqui.
