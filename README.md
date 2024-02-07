@@ -22,6 +22,7 @@ Este Repositório tem dicas de redução de Consumo de Energia em NAS e Home Ser
 > Se você não tem como medir o consumo, não tem como saber quanto está usando agora, nem qual a economia que os procedimentos abaixo vão proporcionar.
 >
 > ![MEDIDOR DE ENERGIA DIGITAL](prints/power-metter.webp)
+> ![MEDIDOR DE ENERGIA DIGITAL](prints/power-metter.jpg)
 
 Abaixo alguns links para você comprar o seu medidor, são links de afiliado que ajudam o canal com comissão e você não paga nada a mais por isso:
 
