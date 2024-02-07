@@ -38,11 +38,14 @@ O Servidor normalmente é headless (sem vídeo), se a sua placa mãe suporta boo
 * Jellyfin [HWA Tutorial On Intel GPU](https://jellyfin.org/docs/general/administration/hardware-acceleration/intel/)
 * Wikipedia [Broadwell Micro Architecture](https://pt.wikipedia.org/wiki/Broadwell_(microarquitetura))
 
-Sempre que possivel remova:
-* Módulos de memória
-* Teclado e mouse
-* Monitor
-* Placa de Vídeo
+> [!TIP]
+> Sempre que possivel remova:
+> * Módulos de memória
+> * Teclado e mouse
+> * Monitor
+> * Placa de Vídeo
+> * Placa de Rede
+> * Vá na BIOS e desative componentes não utilizadados: Som, Serial, Paralela
 
 # Escolha Componentes Corretamente
 
