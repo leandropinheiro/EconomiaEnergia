@@ -15,6 +15,14 @@ Este Repositório tem dicas de redução de Consumo de Energia em NAS e Home Ser
 
 [![OpenMediaVault Como Reduzir Consumo de Energia?](prints/OpenMeidaVault_Como_Reduzir_Consumo_de_Energia.png)](https://youtu.be/DvxArzs84t0)
 
+# Você vai precisar de um instrumento pra medir o consumo
+
+>[!TIP]
+>
+> Se você não tem como medir o consumo, não tem como saber quanto está usando agora, nem qual a economia que os procedimentos abaixo vão proporcionar.
+>
+> ![MEDIDOR DE ENERGIA DIGITAL](prints/power-metter.webp)
+
 # Menos é mais
 Tudo que você pluga no servidor consome energia
 
